@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    display: none;
+}
+
+#results {
+    margin-top: 20px;
+}
+
+.prob-bar {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.prob-bar span:first-child {
+    width: 80px;
+}
+
+.bar {
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin: 0 10px;
+    flex: 1;
+    position: relative;
+}
+
+.bar::after {
+    content: '';
+    height: 100%;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    position: absolute;
+    width: var(--width, 0%);
+    transition: width 0.5s;
+}
+
+#neg-bar::after { background-color: #f44336; }
+#neu-bar::after { background-color: #ff9800; }
+#pos-bar::after { background-color: #4CAF50; }
+
+#chart {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

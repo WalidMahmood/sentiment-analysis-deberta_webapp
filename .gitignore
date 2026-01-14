@@ -1,0 +1,17 @@
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.env
+.ipynb_checkpoints/
+.vscode/
+.idea/
+dist/
+build/
+*.egg-info/
+.coverage
+htmlcov/
+.pytest_cache/
+.dockerignore

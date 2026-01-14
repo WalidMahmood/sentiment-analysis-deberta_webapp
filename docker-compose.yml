@@ -1,0 +1,14 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./models:/app/models # Optional: Mount models to avoid rebuilding image when models change
+    environment:
+      - MODEL_PATH=/app/models/deberta_base_config3
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 2G

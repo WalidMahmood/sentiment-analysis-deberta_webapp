@@ -1,0 +1,27 @@
+{
+    "config": "CONFIG 3 (DeBERTa-base - Aggressive Optimization)",
+    "model": "DeBERTa-base",
+    "learning_rate": 3e-06,
+    "weight_decay": 0.05,
+    "batch_size": 32,
+    "epochs_trained": 9,
+    "total_epochs": 10,
+    "warmup_steps": 500,
+    "patience": 3,
+    "class_weights": [
+        1.0,
+        1.2999999523162842,
+        1.0
+    ],
+    "label_smoothing_epsilon": 0.1,
+    "test_accuracy": 0.7783326930464848,
+    "test_f1": 0.7811843549798163,
+    "roc_auc": 0.9134832436347864,
+    "final_gap": 4.615320403418844,
+    "improvement_over_config2": 1.028435497981628,
+    "per_class_f1": {
+        "negative": 0.7868421052631579,
+        "neutral": 0.7234259495284221,
+        "positive": 0.8332850101478689
+    }
+}

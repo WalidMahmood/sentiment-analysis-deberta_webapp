@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sentiment Analysis Web App</h1>
+        <form id="sentiment-form">
+            <textarea id="text-input" placeholder="Enter your text here..." required></textarea>
+            <button type="submit">Analyze Sentiment</button>
+        </form>
+        <div id="results" class="hidden">
+            <h2>Analysis Results</h2>
+            <p><strong>Text:</strong> <span id="result-text"></span></p>
+            <p><strong>Predicted Sentiment:</strong> <span id="result-class"></span></p>
+            <div id="probabilities">
+                <h3>Confidence Scores</h3>
+                <div class="prob-bar">
+                    <span>Negative:</span>
+                    <div class="bar" id="neg-bar"></div>
+                    <span id="neg-score"></span>
+                </div>
+                <div class="prob-bar">
+                    <span>Neutral:</span>
+                    <div class="bar" id="neu-bar"></div>
+                    <span id="neu-score"></span>
+                </div>
+                <div class="prob-bar">
+                    <span>Positive:</span>
+                    <div class="bar" id="pos-bar"></div>
+                    <span id="pos-score"></span>
+                </div>
+            </div>
+            <div id="chart-container">
+                <h3>Visualization</h3>
+                <img id="chart" alt="Sentiment Chart" />
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
