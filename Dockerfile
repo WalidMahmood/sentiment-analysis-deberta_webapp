@@ -18,9 +18,9 @@ COPY models /app/models
 # Set environment variable for model path
 ENV MODEL_PATH=/app/models/deberta_base_config3
 
-# Make port 8000 available to the world outside this container
-EXPOSE 8000
+# Make port 7860 available to the world outside this container
+EXPOSE 7860
 
 # Run app.py when the container launches
 WORKDIR /app/backend
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "7860"]
