@@ -1,3 +1,11 @@
+---
+title: Sentiment Analysis Deberta Webapp
+emoji: 🎭
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 7860
+---
 
 <div align="center">
 
