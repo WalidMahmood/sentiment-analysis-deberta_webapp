@@ -16,6 +16,7 @@ pinned: false
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![DeBERTa](https://img.shields.io/badge/Model-DeBERTa-yellow?style=for-the-badge&logo=huggingface&logoColor=white)](https://huggingface.co/docs/transformers/model_doc/deberta)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue?style=for-the-badge)](https://huggingface.co/spaces/WalidMahmood/sentiment-analysis-deberta_webapp)
 
 **A high-performance, containerized web application for real-time sentiment analysis using state-of-the-art implementation of DeBERTa.**
 
