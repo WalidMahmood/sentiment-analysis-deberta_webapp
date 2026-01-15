@@ -1,9 +1,10 @@
 ---
-title: "Sentiment Analysis DeBERTa Webapp"
+title: Sentiment Analysis DeBerTa Webapp
 emoji: 🎭
 colorFrom: blue
 colorTo: indigo
 sdk: docker
+app_port: 7860
 ---
 
 <div align="center">
